@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multilevel Encryption Scheme with Vigenère Cipher</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Multilevel Vigenere Cipher Encryption</h1>
+    </header>
+    <div class="main">
+        <label for="keyword1">Key 1:</label>
+        <input type="text" id="keyword1"><br><br>
+
+        <label for="keyword2">Key 2:</label>
+        <input type="text" id="keyword2"><br><br>
+
+        <label for="plaintext">Plaintext :</label>
+        <textarea id="plaintext"></textarea><br><br>
+
+        <button onclick="multiEncrypt()">Encryption</button>
+        <button onclick="multiDecrypt()">Decryption</button><br><br>
+
+        <label for="ciphertext">Ciphertext :</label>
+        <textarea id="ciphertext"></textarea>
+    </div>
+    <p id="description">A multi-level encryption scheme uses the Vigenère cipher to improve security against cryptanalysis. In this method, a fixed length of plain text and a key are selected and applied in the Vigenère table to get a new cipher text. 
+    </p>
+    <div id="info">P Amrutha VU21CSEN0101461</div>
+</body>
+<script src="script.js"></script>
+</html>
